@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/favCoffee.jpg" type="image/x-icon">
+    <title>Premium Coffee House</title>
 </head>
 <body>
+
+    <header>
+        <nav class="mainNav">
+            <img class="coffeeLogo" src="img/MainLogo.jpg" alt="Coffee Bar Logo" />
+            <ul>
+                <li><a href="about">About</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="products">Products</a></li>
+                <li><a href="contact">Contact</a></li>
+                <div class="subscribeUs">
+                    <button class="subscribe">Subscribe</button>
+                </div>
+            </ul>
+            
+            
+        </nav>
+    </header>
+
+    <div class="container">
+        <img src="img/HomeImg.jpg" class="coffImg" alt="Coffee" srcset="">
+        <div>
+            <div class="shopName">
+                <h1 class="shop">Premium Coffee House</h1>
+            </div>
+           
+        </div>
+        
+    </div>
+    <div>
+        <div class="">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
     <div id="popUp">
         <div class="popUpContent">
             <span class="close">&times;</span>
@@ -21,22 +71,8 @@
         </div>
     </div>
 
-    <script>
-        const popUp = document.getElementById('popUp');
-        const close = document.querySelector('.close');
-        const subscribeBtn = document.querySelector('.subscribeBtn');
-
-        close.addEventListener("click", () => {
-            popUp.style.display = "none";
-        })
-        
-        subscribeBtn.addEventListener("click", () => {
-            var email = document.querySelector('#email').value;
-            if (email == '') {
-                document.querySelector('#required').style.visibility = "visible";
-                // body.appendChild(warning);
-            }
-        })
+    <script src="/index.js">
+       
 
     </script>
 </body>
