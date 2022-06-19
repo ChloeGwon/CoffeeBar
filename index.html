@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="popUp">
+        <div class="popUpContent">
+            <span class="close">&times;</span>
+            <p style="font-size: 30px"><b>Here's 10% off your first order</b></p>
+            <p>Sign up to be the first to know about the latest coffees, <br>deals and news from the roastery, <br>and get 10% off your first coffee order!</p>
+            <input class="infoForSubscribe" name="firstName" placeholder="First name" /><br>
+            <input class="infoForSubscribe" name="lastName" placeholder="Last name" /><br>
+            <input class="infoForSubscribe" id='email' name="emailAddress" placeholder="Email address" required /><br>
+            <p id="required" style="visibility: hidden">Email is required</p>
+            <button class="subscribeBtn">Subscribe</button>
+        </div>
+    </div>
+
+    <script>
+        const popUp = document.getElementById('popUp');
+        const close = document.querySelector('.close');
+        const subscribeBtn = document.querySelector('.subscribeBtn');
+
+        close.addEventListener("click", () => {
+            popUp.style.display = "none";
+        })
+        
+        subscribeBtn.addEventListener("click", () => {
+            var email = document.querySelector('#email').value;
+            if (email == '') {
+                document.querySelector('#required').style.visibility = "visible";
+                // body.appendChild(warning);
+            }
+        })
+
+    </script>
 </body>
 </html>
