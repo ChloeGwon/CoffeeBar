@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.js">
     <link rel="shortcut icon" href="img/favCoffee.jpg" type="image/x-icon">
-    <title>Premium Coffee House</title>
+    <title>Notes Coffee</title>
 </head>
 <body>
 
@@ -30,7 +31,14 @@
         </nav>
     </header>
 
-    <div class="container">
+    <div>
+        <img class="mainImg" src="img/MainPic.png" />
+        
+        <div class="lessOpacity"></div>
+        <p class="storeName">NOTES COFFEE</p>
+    </div>
+
+    <!-- <div class="container">
         <img src="img/HomeImg.jpg" class="coffImg" alt="Coffee" srcset="">
         <div>
             <div class="shopName">
@@ -50,63 +58,89 @@
             </div>
         </div>
         
-    </div>
+    </div> -->
 
     <div class="wrapper">
         <div class="about">
             <div class="desc-about">
-                <div class="left">
+                <!-- <div class="left">
                     <img class="bestImg" src="https://images.unsplash.com/photo-1610632380989-680fe40816c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="" srcset="">
-                </div>
+                </div> -->
                 
                 <div class="right">
-                    <h1 class="label">Best coffee in town</h1>
+                    <h1 class="label">Our Coffee</h1>
                     <p class="descCoffee">
-                        We are coffee punks who don’t exaggerate about their Americanos. Time, temperature, and technique 
-                        need to be on point to make the best cup of coffee, but it’s all for nothing without quality beans 
-                        roasted to perfection.  
+                        Our roastery plant is located in Bahrain. We source premium 100% Arabica beans grown in optimal weather conditions and roast them locally at our plants. Owing to the unique flavor notes in our blends, our fresh coffee is in high demand among retailers and businesses within the region.
                     </p>
                 </div>
+
+               
+            </div>
+            <div class="ourCoffee">
+                <p style="font-size: 1.3em"><b>Single Origin Speciality Coffee</b></p>
+                <p>High grade coffee, sourced from origin<br>
+                    and lovingly roasted in east London under<br>
+                    the meticulous eye of our Co-Founder, Fabio.<br>
+                    Our coffee beans are from farmers who take <br>
+                    as much care nurturing their coffee plants <br>
+                    as we do roasting and brewing our beans.<br>
+                    We focus on small batch roasted coffee so <br>
+                    that every delicate and unique flavour <br>
+                    is translated in the cup.</p>
+                    <img class="coffeePic" src="./img/coffee.png" />
             </div>
         </div>
         <br>
 
+        
+        <div id="menu">
+            <h1 style="margin-left:-1px;" class="label">Menu</h1>
+            <div class="opacity"></div>
+            <span class="coffeeMenu">                
+                <h2 class="menu">COFFEE</h2>
+                <p style="font-family: oblique; padding-bottom: 20px;">Decaf no charge, Extra Shot $1, Soya, Almond or Oat Milk $2</p>
+                <ul style="display: block">
+                    <li>Espresson <span class="list">- $</span> 2.6</li>
+                    <li>Macchiato <span class="list">- $</span> 2.9</li>
+                    <li>Cortado <span class="list">- $</span> 3.1</li>
+                    <li>Cold Brew <span class="list">- $</span> 3.4</li>
+                    <li>Flat White <span class="list">- $</span> 3.4</li>
+                    <li>Cappuccino <span class="list">- $</span> 3.4</li>
+                    <li>Mocha <span class="list">- $</span> 3.4</li>
+                    <li>Hot Chocolate <span class="list">- $</span> 3.4</li>
+                    <li>Chai Tea Latte <span class="list">- $</span> 3.4</li>
+                    <li>Matcha Latte <span class="list">- $</span> 3.4</li>
+                </ul>
+                <img class="coffeeMenuPic" src="./img/coffeeMenu2.png" />
+            </span>
+
+            <div class="opacity2"></div>
+            <span class="teaMenu">
+                <h2 class="menu" style="padding-top: 40px;">TEA</h2>
+                <p style="font-family: oblique; padding-bottom: 20px;">by the pot</p>
+                <ul style="display: block; line-height: 30px;">
+                    <li>Assam <span class="list">- $</span> 3.2</li>
+                    <li>Darjeeling <span class="list">- $</span> 3.2</li>
+                    <li>Earl Grey <span class="list">- $</span> 3.2</li>
+                    <li>Premium Green <span class="list">- $</span> 3.2</li>
+                    <li>Genmai Cha <span class="list">- $</span> 3.2</li>
+                    <li>Fresh Mint <span class="list">- $</span> 3.2</li>
+                    <li>Oolong Tea <span class="list">- $</span> 3.4</li>
+                    <li>Herbal Tea <span class="list">- $</span> 3.4</li>
+                    <li>Chamomile Lemongrass Tea <span class="list">- $</span> 3.5</li>
+                    <li>Yerba Mate & Guayusa <span class="list">- $</span> 3.6</li>
+                </ul>
+                <img class="teaMenuPic" src="./img/teaMenu.png" />
+            </span>
+            <!-- <div class="menuContainer"></div>
+            <div class="menuContainer2"></div>
+            <div class="menuContainer3"></div> -->
+            
+        </div>
+
         <img class="imgAboveMenu" src="./img/menu.jpg">
         <h1 class="hours">OPEN EVERY DAY</h1>
         <p class="dailyHours">Weekdays: 06:00 - 24:00<br>Weekends: 07:00 - 24:00</p>
-        
-        <div id="menu">
-            <h1 class="label">Menu</h1>
-            <h2 class="menu">COFFEE</h2>
-            <p style="font-family: oblique; padding-bottom: 20px;">Decaf no charge, Extra Shot $1, Soya, Almond or Oat Milk $2</p>
-            <ul style="display: block; line-height: 30px;">
-                <li>Espresson <span class="list">- $</span> 2.6</li>
-                <li>Macchiato <span class="list">- $</span> 2.9</li>
-                <li>Cortado <span class="list">- $</span> 3.1</li>
-                <li>Piccolo <span class="list">- $</span> 3.1</li>
-                <li>Cold Brew <span class="list">- $</span> 3.4</li>
-                <li>Flat White <span class="list">- $</span> 3.4</li>
-                <li>Cappuccino <span class="list">- $</span> 3.4</li>
-                <li>Mocha <span class="list">- $</span> 3.4</li>
-                <li>Hot Chocolate <span class="list">- $</span> 3.4</li>
-                <li>Chai Tea Latte <span class="list">- $</span> 3.4</li>
-                <li>Matcha Latte <span class="list">- $</span> 3.4</li>
-            </ul>
-
-            <h2 class="menu" style="padding-top: 40px;">TEA</h2>
-            <p style="font-family: oblique; padding-bottom: 20px;">by the pot</p>
-            <ul style="display: block; line-height: 30px;">
-                <li>Assam <span class="list">- $</span> 3.2</li>
-                <li>Darjeeling <span class="list">- $</span> 3.2</li>
-                <li>Earl Grey <span class="list">- $</span> 3.2</li>
-                <li>Premium Green <span class="list">- $</span> 3.2</li>
-                <li>Genmai Cha <span class="list">- $</span> 3.2</li>
-                <li>Fresh Mint <span class="list">- $</span> 3.2</li>
-            </ul>
-            <div class="menuContainer"></div>
-            <div class="menuContainer2"></div>
-            <div class="menuContainer3"></div>
-        </div>
     </div>
 
 

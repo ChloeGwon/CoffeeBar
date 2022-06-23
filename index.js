@@ -15,7 +15,6 @@ subscribeBtn.addEventListener("click", () => {
     var email = document.querySelector('#email').value;
     if (email == '') {
         document.querySelector('#required').style.visibility = "visible";
-        // body.appendChild(warning);
     }
 })
 
