@@ -63,3 +63,13 @@ function amination(){
 }
 
 let start = setInterval(amination, 3000);
+
+
+{/* <div class="productWrapper">
+<div class="eachProduct">
+    <div class="productImage"></div> 
+    <h4 class="productName"></h4>
+    <p class="productPrice"></p>
+</div>
+</div> */}
+

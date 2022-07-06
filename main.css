@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 body{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Outfit', sans-serif;
     /* background-color: black; */
     color: #fefefe;
     
@@ -19,7 +21,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: monospace;
+    /* font-family: monospace; */
 }
 ul{
     display: flex;
@@ -49,7 +51,7 @@ ul li a{
     margin-right: 30px;
     font-weight:500;
     font-size: 0.95em;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     cursor: pointer;
     transition: all 0.7s ease-out; 
 }
@@ -82,7 +84,7 @@ ul li a{
     right: 15%;
     width: 30%;
     font-size: 2.7em;
-    font-family: Trebuchet MS;
+    /* font-family: Trebuchet MS; */
 }
 .shop{
     border-left: 5px solid #baa375;
@@ -127,7 +129,7 @@ ul li a{
     margin-top: 50px;
     margin-bottom: 0%;
     text-transform: uppercase;
-    font-family: 'Anek Malayalam', sans-serif;
+    /* font-family: 'Anek Malayalam', sans-serif; */
 }
 .wrapper{
     background-color: black;
@@ -162,7 +164,7 @@ ul li a{
     text-transform: capitalize;
     font-size: 4.9em;
     font-weight: 400;
-    font-family: monospace;
+    /* font-family: monospace; */
     padding: 10px 20px;
     margin-left: 200px;
     padding-top: 100px;
@@ -172,7 +174,7 @@ ul li a{
     font-size: 1.5em;
     /* color: #baa375; */
     /* font-family: 'Inter', sans-serif; */
-    font-family: monospace;
+    /* font-family: monospace; */
     padding: 10px 20px;
     margin-left: -140px;
 }
@@ -220,7 +222,7 @@ ul li a{
     background-color: black;
     color: white;
     border: none;
-    font-family: monospace;
+    /* font-family: monospace; */
 }
 
 .subscribeBtn:hover {
@@ -255,11 +257,11 @@ li{
 }
 
 .menu{
-    font-family: Trebuchet MS;
+    /* font-family: Trebuchet MS; */
 }
 
 .list{
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .menuContainer{
@@ -286,7 +288,7 @@ li{
     margin-top: -25%;
     margin-left: 37%;
     font-size: 2.9em;
-    font-family: monospace;
+    /* font-family: monospace; */
 }
 
 .dailyHours{
@@ -295,7 +297,7 @@ li{
     margin-left: 37%;
     font-size: 2em;
     color: #baa375;
-    font-family: monospace;
+    /* font-family: monospace; */
 }
 
 .menuContainer2{
@@ -329,7 +331,7 @@ li{
     margin-top: -37%;
     /* margin-right: auto; */
     font-size: 3em;
-    font-family: monospace;
+    /* font-family: monospace; */
 }
 
 .lessOpacity{
@@ -347,7 +349,7 @@ li{
     width: 1000px;
     height: 300px;
     font-size: 1.3em;
-    font-family: monospace;
+    /* font-family: monospace; */
     padding-top: 100px;
     margin-left: 20%;
 }
@@ -436,7 +438,7 @@ li{
   
 }
 .coffeeMenu ul{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -445,7 +447,7 @@ li{
 
 .specials{
     overflow: hidden;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 .spHeading{
     text-align: center;
@@ -551,4 +553,85 @@ background-color: rgb(72, 188, 217);;
 .sliderItem:nth-child(1) .drinkCost{
     color: #e2e90f;
   border:  2px solid rgb(255, 255, 255);
+}
+
+
+/* <div class="productWrapper">
+<div class="eachProduct">
+    <img class="productImage" src='./coffeeProducts/coffee1.png' />
+    <h4 class="productName">M'Boi Tata | Brazil</h4>
+    <p class="productPrice">$23.00</p>
+</div>
+</div> */
+
+.productWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* flex-direction: row; */
+    width: 90%;
+    color: black;
+    margin: 0 auto;
+    position: relative;
+}
+
+.eachProduct{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin-top: 15%;
+    margin-left: 10%;
+    display: inline;
+}
+
+.productImage{
+    width: 100%;
+    display: flex;
+}
+
+.productName{
+    color: rgb(119, 118, 118);
+}
+
+.productPrice{
+    margin-top: 0;
+}
+
+
+.shopNow{
+    background-color: rgb(46, 45, 45);
+    color: white;
+    padding: 16px 30px;
+    font-size: 14px;
+    width: 60%;
+    height: 50%;
+    text-align: center;
+}
+
+.imgWrapper{
+    position: relative;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.imgWrapper:hover .middle{
+    opacity: 1;
+}
+
+.middle:hover{
+    cursor: pointer;
+}
+
+.shopNow:hover{
+    background-color: rgb(241, 241, 241);
+    color: black;
+    transition: .5s ease;
 }
