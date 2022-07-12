@@ -14,9 +14,10 @@ body{
 }
 
 .coffeeLogo{
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 50px;
     cursor: pointer;
+    padding-left: 50px;
 }
 
 nav{
@@ -24,8 +25,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* font-family: monospace; */
-    }
+}
+
 ul{
     display: flex;
     margin-top: 10px;
@@ -273,7 +274,7 @@ li{
 
 
 
-.imgAboveMenu{
+/* .imgAboveMenu{
     width: 340px;
     margin-left: 38%;
     margin-top: 70px;
@@ -286,7 +287,6 @@ li{
     margin-top: -25%;
     margin-left: 37%;
     font-size: 2.9em;
-    /* font-family: monospace; */
 }
 
 .dailyHours{
@@ -295,8 +295,7 @@ li{
     margin-left: 37%;
     font-size: 2em;
     color: #baa375;
-    /* font-family: monospace; */
-}
+} */
 
 .menuContainer2{
     width: 300px;
@@ -318,6 +317,10 @@ li{
     margin-left: 30%;
 }
 
+.main{
+    position: relative;
+}
+
 .mainImg{
     width: 100%;
     /* opacity: 0.5; */
@@ -325,11 +328,9 @@ li{
 
 .storeName{
     position: absolute;
-    margin-left: 40%;
-    margin-top: -37%;
-    /* margin-right: auto; */
-    font-size: 3em;
-    /* font-family: monospace; */
+    top: 35%;
+    left: 38%;
+    font-size: 3rem;
 }
 
 
@@ -342,65 +343,64 @@ li{
     margin-left: 20%;
 }
 
-.coffeePic{
+/* .coffeePic{
     width: 380px;
     position: absolute;
     margin-top: -18%;
     margin-left: 35%;
-}
+} */
 
 .coffeeMenu{
-    display: block; 
+    display: flex;
+    flex-direction: row;
+    /* display: block; 
     line-height: 30px;
-    /* background-color: grey; */
     width: 35%;
     margin-left: 6%;
     padding: 0 100px 0 40px;
-    order: 1;
+    order: 1; */
+}
+
+.coffeeMenu-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.coffeeMenu-right{
+    width: 50%;
 }
 
 .teaMenu{
-    display: block; 
-    line-height: 30px;
-    /* background-color: grey; */
-    width: 35%;
-    margin-top: -1%;
-    margin-left: 57%;
-    order: 2;
+    display: flex;
+    flex-direction: row;
 }
 
-
-
-.coffeeMenuPic{
-    width: 760px;
-    /* height:  */
-    position: absolute;
-    margin-top: -32.85%;
-    margin-left: 23%;
+.teaMenu-left{
+    width: 50%;
 }
 
-.teaMenuPic{
-    width: 709px;
-    /* height:  */
-    position: absolute;
-    margin-top: -32.8%;
-    margin-left: -75%;
-    opacity: 0.8;
+.teaMenu-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
 }
 
 .menu{
     color: #7c5f26;
     font-size: 40px;
-    
-
+    display: flex;
+    flex-direction: column;
 }
 .coffeeHead{
     font-size: 24px; 
    
 }
-.coffeeMenu{
-  
-}
+
 .coffeeMenu ul{
     /* font-family: 'Roboto', sans-serif; */
     font-size: 18px;

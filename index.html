@@ -18,7 +18,7 @@
 
     <header>
         <nav class="mainNav">
-            <img class="coffeeLogo" src="img/MainLogo.jpg" alt="Coffee Bar Logo" />
+            <img class="coffeeLogo" src="img/MainLogo.png" alt="Coffee Bar Logo" />
             <ul>
                 <li><a href="#intro">About</a></li>
                 <li><a href="#specials">Specials</a></li>
@@ -36,10 +36,10 @@
     </header>
 
     
+    <div class="main">
         <img class="mainImg" src="img/MainPic.png" />
-        
-        <div class="lessOpacity"></div>
-        <p class="storeName">NOTES COFFEE</p>
+        <!-- <p class="storeName">NOTES COFFEE</p> -->
+    </div>
     </div>
 
 
@@ -110,55 +110,61 @@
         </div>
     </div>
 
-        
+    <h1 class="label"><span>Menu</span></h1>
         <div id="menu">
-            <h1 class="label"><span>Menu</span></h1>
-            <span class="coffeeMenu">                
-                <h2 class="menu">Coffee</h2>
-                <p class="coffeeHead" >Decaf no charge, Extra Shot $1, Soya, Almond or Oat Milk $2</p>
-                <ul class="menu-list" style="display: block">
-                    <li><span class="name">Espresson</span>- $<span class="price">2.6</span> <span class="addItem" id="1">+</span></li>
-                    <li><span class="name">Macchiato</span>- $<span class="price">3.6</span> <span class="addItem" id="2">+</span></li>
-                    <li><span class="name">Cortado</span>- $<span class="price">2.4</span> <span class="addItem" id="3">+</span></li>
-                    <li><span class="name">Cold Brew</span>- $<span class="price">5.6</span> <span class="addItem" id="4">+</span></li>
-                    <li><span class="name">Flat White</span>- $<span class="price">2.2</span> <span class="addItem" id="5">+</span></li>
-                    <li><span class="name">Cappuccino</span>- $<span class="price">2.6</span> <span class="addItem" id="6">+</span></li>
-                    <li><span class="name">Hot Chocolate</span>- $<span class="price">4.4</span> <span class="addItem" id="7">+</span></li>
-                    <li><span class="name">Chai Tea Latte</span>- $<span class="price">4.3</span> <span class="addItem" id="8">+</span></li>
-                    <li><span class="name">Matcha Latte</span>- $<span class="price">1.7</span> <span class="addItem" id="9">+</span></li>
-                    <li><span class="name">Mocha</span>- $<span class="price">3.4</span> <span class="addItem" id="10">+</span></li>
+            <article>
+                <div class="coffeeMenu">
+                    <div class="coffeeMenu-left">
+                            <h2 class="menu">Coffee</h2>
+                            <p class="coffeeHead" >Decaf no charge, Extra Shot $1, Soya, Almond or Oat Milk $2</p>
+                            <ul class="menu-list" style="display: block">
+                                <li><span class="name">Espresson</span>- $<span class="price">2.6</span> <span class="addItem" id="1">+</span></li>
+                                <li><span class="name">Macchiato</span>- $<span class="price">3.6</span> <span class="addItem" id="2">+</span></li>
+                                <li><span class="name">Cortado</span>- $<span class="price">2.4</span> <span class="addItem" id="3">+</span></li>
+                                <li><span class="name">Cold Brew</span>- $<span class="price">5.6</span> <span class="addItem" id="4">+</span></li>
+                                <li><span class="name">Flat White</span>- $<span class="price">2.2</span> <span class="addItem" id="5">+</span></li>
+                                <li><span class="name">Cappuccino</span>- $<span class="price">2.6</span> <span class="addItem" id="6">+</span></li>
+                                <li><span class="name">Hot Chocolate</span>- $<span class="price">4.4</span> <span class="addItem" id="7">+</span></li>
+                                <li><span class="name">Chai Tea Latte</span>- $<span class="price">4.3</span> <span class="addItem" id="8">+</span></li>
+                                <li><span class="name">Matcha Latte</span>- $<span class="price">1.7</span> <span class="addItem" id="9">+</span></li>
+                                <li><span class="name">Mocha</span>- $<span class="price">3.4</span> <span class="addItem" id="10">+</span></li>
+        
+                            
+                            </ul>
+                        </div>
+                        <img class="coffeeMenu-right" src="./img/coffeeMenu2.png" />
+                </div>
+            </article>
 
-                
-                </ul>
-                <img class="coffeeMenuPic" src="./img/coffeeMenu2.png" />
-            </span>
+            <article>
+                <div class="teaMenu">
+                    <img class="teaMenu-left" src="./img/teaMenu.png" />
+                    <div class="teaMenu-right">
+                        <h2 class="menu" style="padding-top: 40px;">TEA</h2>
+                    <p style="font-family: oblique; padding-bottom: 20px;">by the pot</p>
+                    <ul style="display: block; line-height: 30px;">
 
-            <span class="teaMenu">
-                <h2 class="menu" style="padding-top: 40px;">TEA</h2>
-                <p style="font-family: oblique; padding-bottom: 20px;">by the pot</p>
-                <ul style="display: block; line-height: 30px;">
+                        <li><span class="name">Assam</span>- $<span class="price">3.2</span> <span class="addItem">+</span></li>
+                        <li><span class="name">Darjeeling</span>- $<span class="price">2.8</span> <span class="addItem">+</span></li>
+                        <li><span class="name">Earl Grey</span>- $<span class="price">4.5</span> <span class="addItem">+</span></li>
+                        <li><span class="name">Premium Green</span>- $<span class="price">5.6</span> <span class="addItem">+</span></li>
+                        <li><span class="name">Genmai Cha</span>- $<span class="price">2.2</span> <span class="addItem">+</span></li>
+                        <li><span class="name">Fresh Mint</span>- $<span class="price">1.6</span> <span class="addItem">+</span></li>
+                        <li><span class="name">Oolong Tea</span>- $<span class="price">2.1</span> <span class="addItem">+</span></li>
+                        <li><span class="name">Chamomile Lemongrass Tea</span>- $<span class="price">2.3</span> <span class="addItem">+</span></li>
+                        <li><span class="name">Herbal Tea</span>- $<span class="price">1.6</span> <span class="addItem">+</span></li>
+                        <li><span class="name">Yerba Mate & Guayusa</span>- $<span class="price">2.9</span> <span class="addItem">+</span></li>
 
-                    <li><span class="name">Assam</span>- $<span class="price">3.2</span> <span class="addItem">+</span></li>
-                    <li><span class="name">Darjeeling</span>- $<span class="price">2.8</span> <span class="addItem">+</span></li>
-                    <li><span class="name">Earl Grey</span>- $<span class="price">4.5</span> <span class="addItem">+</span></li>
-                    <li><span class="name">Premium Green</span>- $<span class="price">5.6</span> <span class="addItem">+</span></li>
-                    <li><span class="name">Genmai Cha</span>- $<span class="price">2.2</span> <span class="addItem">+</span></li>
-                    <li><span class="name">Fresh Mint</span>- $<span class="price">1.6</span> <span class="addItem">+</span></li>
-                    <li><span class="name">Oolong Tea</span>- $<span class="price">2.1</span> <span class="addItem">+</span></li>
-                    <li><span class="name">Chamomile Lemongrass Tea</span>- $<span class="price">2.3</span> <span class="addItem">+</span></li>
-                    <li><span class="name">Herbal Tea</span>- $<span class="price">1.6</span> <span class="addItem">+</span></li>
-                    <li><span class="name">Yerba Mate & Guayusa</span>- $<span class="price">2.9</span> <span class="addItem">+</span></li>
-
-                </ul>
-                <img class="teaMenuPic" src="./img/teaMenu.png" />
-            </span>
-           
+                    </ul>
+                    </div>
+                </div>
+            </article>
             
         </div>
 
-        <img class="imgAboveMenu" src="./img/menu.jpg">
+        <!-- <img class="imgAboveMenu" src="./img/menu.jpg">
         <h1 class="hours">OPEN EVERY DAY</h1>
-        <p class="dailyHours">Weekdays: 06:00 - 24:00<br>Weekends: 07:00 - 24:00</p>
+        <p class="dailyHours">Weekdays: 06:00 - 24:00<br>Weekends: 07:00 - 24:00</p> -->
     
 
     
@@ -294,6 +300,6 @@
     </div>
 
  
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
