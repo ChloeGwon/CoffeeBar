@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800;900;1100;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&family=Nunito+Sans:wght@200;300;400;600;700;800&family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600&family=Nunito+Sans:wght@200;300;400;600;700;800&family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600&family=Montserrat:wght@900&family=Nunito+Sans:wght@200;300;400;600;700;800&family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Ibarra+Real+Nova:wght@400;500;600&family=Nunito+Sans:wght@200;300;400;600;700;800&family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Gantari:ital,wght@0,800;0,900;1,700&family=Ibarra+Real+Nova:wght@400;500;600&family=Nunito+Sans:wght@200;300;400;600;700;800&family=Source+Sans+Pro:wght@600&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -8,20 +14,19 @@ body{
     margin: 0%;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
-    /* background-color: black; */
     color: #fefefe;
     
 }
 
 .coffeeLogo{
-    width: 110px;
-    height: 50px;
+    width: 80px;
+    height: 30px;
     cursor: pointer;
     padding-left: 50px;
 }
 
 nav{
-    background-color:black ;
+    background-color:rgb(19, 19, 19) ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,10 +38,11 @@ ul{
     align-items: center;
 }
 li{
-    margin-left: 35px;
-    margin-right: 25px;
+    margin-left: 45px;
+    margin-right: 35px;
     list-style: none;
-    font-size: 1.1em;
+    font-size: 13px;
+    font-weight: 100;
 }
 ul li a{
     text-decoration: none;
@@ -47,15 +53,14 @@ ul li a{
 }
 .subscribe{
     margin-left: 40px;
-
+    letter-spacing: 0.1cm;
     border: none;
-    background-color: #fefefe;
+    background-color: #fefefeb9;
     color: black;
     padding: 12px 22px;
     margin-right: 30px;
     font-weight:500;
     font-size: 0.95em;
-    /* font-family: 'Roboto', sans-serif; */
     cursor: pointer;
     transition: all 0.7s ease-out; 
 }
@@ -88,7 +93,6 @@ ul li a{
     right: 15%;
     width: 30%;
     font-size: 2.7em;
-    /* font-family: Trebuchet MS; */
 }
 .shop{
     border-left: 5px solid #baa375;
@@ -103,12 +107,19 @@ ul li a{
 .intro{
     display: flex;
     flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #D8CFC4;
+    padding: 3rem 0 8rem;
 }
+
+.intro-heading{
+    letter-spacing: 0.1cm;
+}
+
 .top{
     margin-left: 20%;
     margin-top: 3%;
-  
-   
+    margin-right: 10%;
 }
 .top h1{
     margin-left: 10px;
@@ -117,7 +128,10 @@ ul li a{
 
 }
 .top .for-border{
-    border-left: 4px solid rgb(238, 172, 5);
+    border-left: 4px solid rgba(156, 106, 5, 0.428);
+    font-weight: 300;
+    line-height: 45px;
+    color: rgb(21, 21, 21);
 }
 .top p{
     font-size: 1.6em;
@@ -128,8 +142,23 @@ ul li a{
 .bottom{
     display: flex;
     margin-top: 5%;
-
 }
+
+.left-desc{
+    color: rgb(30, 30, 30);
+    line-height: 40px;
+}
+
+.for-border2{
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.left-heading{
+    font-weight: 800;
+    letter-spacing: 0.05cm;
+}
+
 .left{
     
     font-size: 1.6em;
@@ -138,7 +167,7 @@ ul li a{
     margin-left: 100px ;
 }
 .left .for-border2{
-    border-left: 4px solid rgb(118, 238, 5);
+    border-left: 4px solid rgba(78, 117, 42, 0.48);
     
 
 }
@@ -148,9 +177,10 @@ ul li a{
     margin-left: 10px;
 }
 .right .right-img{
-
-    height: 80%;
- 
+    height: 500px;
+    margin-left: 60px;
+    /* margin-top: -2%; */
+    margin-right: 70px;
 } 
 
 
@@ -226,7 +256,9 @@ ul li a{
 
 #menu{
     text-align: center;
-    margin: 20px;
+    /* padding: 20px; */
+    padding-bottom: 10em;
+    background-color: #D8CFC4;
 }
 
 li{
@@ -235,16 +267,17 @@ li{
 
 
 .label {
-    padding-top: 20px;
+    padding-top: 10rem;
     display: inline-block;
     text-align: center;
-    border-bottom: 5px solid rgb(113, 58, 5);
-    font-weight: 400;
-     color:  rgb(200, 114, 43);
+    font-weight: 1100;
    text-transform: uppercase;
-    font-size: 45px;
+    font-size: 65px;
     padding-bottom:5px ;
     margin-bottom: 30px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .list{
@@ -273,29 +306,6 @@ li{
 }
 
 
-
-/* .imgAboveMenu{
-    width: 340px;
-    margin-left: 38%;
-    margin-top: 70px;
-    align-items: center;
-    opacity: 0.3;
-}
-
-.hours{
-    position: absolute;
-    margin-top: -25%;
-    margin-left: 37%;
-    font-size: 2.9em;
-}
-
-.dailyHours{
-    position: absolute;
-    margin-top: -15%;
-    margin-left: 37%;
-    font-size: 2em;
-    color: #baa375;
-} */
 
 .menuContainer2{
     width: 300px;
@@ -329,10 +339,20 @@ li{
 .storeName{
     position: absolute;
     top: 35%;
-    left: 38%;
-    font-size: 3rem;
+    left: 8%;
+    font-size: 7rem;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.1cm;
+    font-weight: 900;
 }
 
+.storeAddress{
+    position: absolute;
+    top: 67%;
+    left: 44%;
+    font-size: 1.7rem;
+    font-family: 'Cormorant Garamond', serif;
+}
 
 .ourCoffee{
     width: 1000px;
@@ -343,62 +363,66 @@ li{
     margin-left: 20%;
 }
 
-/* .coffeePic{
-    width: 380px;
-    position: absolute;
-    margin-top: -18%;
-    margin-left: 35%;
+
+.menu-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* .menu-top-left{
+    width: 49.5%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.menu-top-right{
+    width: 49.5%;
+    height: 550px;
+    margin: 0 auto;
 } */
 
-.coffeeMenu{
+.menu-bottom{
+    top: 3rem;
     display: flex;
-    flex-direction: row;
-    /* display: block; 
-    line-height: 30px;
-    width: 35%;
-    margin-left: 6%;
-    padding: 0 100px 0 40px;
-    order: 1; */
+    flex-direction: column;
+    line-height: 2rem;
+    font-family: 'Ibarra Real Nova', serif;
 }
 
-.coffeeMenu-left{
+.menu-bottom ul li{
+    font-size: 20px;
+    letter-spacing: 0.06cm;
+}
+
+.menu-bottom-left{
+    padding-bottom: 3rem;
+}
+
+/* .menu-bottom-left{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.menu-bottom-right{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     line-height: 2rem;
-}
-
-.coffeeMenu-right{
-    width: 50%;
-}
-
-.teaMenu{
-    display: flex;
-    flex-direction: row;
-}
-
-.teaMenu-left{
-    width: 50%;
-}
-
-.teaMenu-right{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    line-height: 2rem;
-}
+} */
 
 .menu{
     color: #7c5f26;
     font-size: 40px;
     display: flex;
     flex-direction: column;
+    padding-top: 6rem;
 }
 .coffeeHead{
     font-size: 24px; 
-   
 }
 
 .coffeeMenu ul{
@@ -410,9 +434,19 @@ li{
 
 
 .specials{
+    padding: 7rem 0;
     overflow: hidden;
+    background-color: #d6cfc16b;
     /* font-family: 'Roboto', sans-serif; */
 }
+
+.spHeading{
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 4rem; 
+    letter-spacing: 0.7cm;
+    font-weight: 800;
+}
+
 .spHeading, .pdHeading{
     text-align: center;
     
@@ -421,20 +455,72 @@ li{
 .spHeading span, .pdHeading span{
     display: inline-block;
     text-align: center;
-    border-bottom: 5px solid rgb(195, 177, 11);
-    font-weight: 400;
-     color: rgb(219, 186, 23);
+    /* border-bottom: 5px solid rgb(195, 177, 11); */
+     /* color: rgb(219, 186, 23); */
    text-transform: uppercase;
     font-size: 45px;
     padding-bottom:5px ;
     margin-bottom: 30px;
 }
+
 .pdHeading span{
+    font-weight: 400;
+}
+/* .pdHeading span{
     color: rgb(23, 150, 219);
     border-bottom: 5px solid rgb(5, 76, 114);
     margin-bottom: 0px;
 
+} */
+
+.AboveProduct{
+    /* margin: 0; */
+    /* padding: 0; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
+
+.AboveProduct-content{
+    width: 35rem;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: rgba(255, 255, 255, 0.841);
+}
+
+.coffeeAtHome{
+    width: 100%;
+}
+
+.content-para1{
+    /* color: white; */
+    font-size: 3.4rem;
+}
+
+.content-para2{
+    /* color: white; */
+    line-height: 35px;
+    font-size: 24px;
+}
+
+.content-para3{
+    /* color: white; */
+    line-height: 35px;
+    font-size: 21px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.content-para3 span{
+    font-weight: 600;
+}
+
+.content-para3 l li{
+    display: flex;
+    flex-direction: row;
+    content: "\2680";
+}
+
 .specialWrapper{
     display: flex;
     width: 300vw;
@@ -644,6 +730,11 @@ background-color: rgb(190, 192, 192);;
     padding: 5px 10px;
     font-size: 20px;
     color: white;
+}
+
+.order{
+    padding: 11rem 0 6rem;
+    margin: 0;
 }
 
 
