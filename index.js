@@ -9,6 +9,8 @@ let newSpan = document.querySelectorAll('.addItem');
 const coffeeName = document.querySelector(".section-coffee-name");
 const coffeePrice = document.querySelector(".section-coffee-price");
 const coffeeSection = document.querySelector(".master-section");
+const orders = document.querySelector(".orders");
+const example = document.querySelector(".example");
 
 
 
@@ -127,60 +129,155 @@ newSpan.forEach((item, index)=>{
         
        
         coffeeChoosen[i++] = itemProduct[index];
-        console.log(coffeeChoosen);
+     
         noOfOrders.style.display = 'inline';
         noOfOrders.innerHTML=i;
 
-        coffeeChoosen.forEach((item, index)=>{
-
-            
-
-            var div = document.createElement("div");
-            var div2 = document.createElement("div");
-            var div3 = document.createElement("div");
-            var img = document.createElement("img");
-
-            var h1 = document.createElement("h1");
-            var h2 = document.createElement("h2");
-
-
-            div.style.display='flex';
-
-            div2.style.width='90%';
-            div3.style.width='90%';
-
-            div2.style.display='flex';
-            div2.style.alignItems='center';
-            div2.style.flexDirection='column';
-
-            img.src='img/med cup.png';
-            img.style.width="180px";
-            img.style.height="280px";
-            div2.append(img);
-
-            h1.innerHTML=item.name;
-            h2.innerHTML="$"+item.price;
-
-            h1.style.fontWeight="800";
-            h1.style.fontSize="2em";
-
-            h2.style.fontWeight="300";
-            h2.style.fontSize="1.5em";
-
-
-            div3.append(h1);
-            div3.append(h2);
-
-            div.appendChild(div2);
-            div.appendChild(div3);
-
-
-            coffeeSection.append(div);
-
-         
-        })
+        
+    
     })
+
+     
+
 })
+
+var sizes, sizeS, sizeM, sizeL;
+
+
+
+// sizeL.addEventListener("click", ()=>{
+
+// })
+
+const newList =[];
+let totPrice=0;
+
+orders.addEventListener("click", ()=>{
+
+  
+    
+
+    coffeeChoosen.forEach((item, index)=>{
+        totPrice = coffeeChoosen[index].price;
+ 
+        var div = document.createElement("div");
+        var div2 = document.createElement("div");
+        var div3 = document.createElement("div");
+
+         sizes = document.createElement("div");
+        sizeS = document.createElement("div");
+         sizeM = document.createElement("div");
+        sizeL = document.createElement("div");
+
+       
+
+        sizeS.classList.add("size");
+        sizeM.classList.add("size");
+        sizeL.classList.add("size");
+
+        sizes.classList.add("sizes");
+
+
+        sizeS.innerHTML="S";
+        sizeM.innerHTML="M";
+        sizeL.innerHTML="L";
+        sizes.append(sizeS);
+        sizes.append(sizeM);
+        sizes.append(sizeL);
+
+
+
+
+        var img = document.createElement("img");
+    
+        var h1 = document.createElement("h1");
+        var h2 = document.createElement("h2");
+        
+
+    
+    
+        div.style.display='flex';
+    
+        div2.style.width='90%';
+        div3.style.width='90%';
+    
+        div2.style.display='flex';
+        div2.style.alignItems='center';
+        div2.style.flexDirection='column';
+    
+        img.src='img/med cup.png';
+        img.classList.add("cup-size");
+
+        img.style.width="180px";
+        img.style.height="280px";
+        div2.append(img);
+    
+        h1.innerHTML=item.name;
+        h2.innerHTML="$"+item.price;
+        
+    
+        h1.style.fontWeight="800";
+        h1.style.fontSize="2em";
+    
+        h2.style.fontWeight="300";
+        h2.style.fontSize="1.5em";
+    
+    
+        div3.append(h1);
+        div3.append(h2);
+        div3.append(sizes)
+    
+        div.appendChild(div2);
+        div.appendChild(div3);
+    
+    
+        coffeeSection.append(div);
+
+
+        sizeL.addEventListener("click", ()=>{
+            
+            h2.innerHTML="$ " + (coffeeChoosen[index].price+1);
+            // price= coffeeChoosen[index].price+1; 
+            totPrice +=1;  
+             displayPrice(totPrice);       
+            
+        })
+
+        sizeS.addEventListener("click", ()=>{
+            h2.innerHTML="$ " + (coffeeChoosen[index].price-1); 
+          
+            totPrice =totPrice -1;  
+            displayPrice(totPrice);       
+
+        })
+
+        sizeM.addEventListener("click", ()=>{
+            h2.innerHTML="$ " +coffeeChoosen[index].price; 
+            // price= coffeeChoosen[index].price; 
+            displayPrice(totPrice);           
+        });
+
+        displayPrice(totPrice);           
+        
+
+    })
+
+})
+
+function displayPrice(totPrice){
+    example.innerHTML="Total: $ "+totPrice;
+    
+    var pay = document.createElement("botton");
+    pay.className='pay';
+    pay.textContent="CHECKOUT";
+    
+    example.appendChild(pay);
+}
+        
+
+
+
+
 
 
 
@@ -207,6 +304,7 @@ subscribeBtn.addEventListener("click", () => {
 
 close.addEventListener("click", () => {
     popUp.style.display = "none";
+
 })
 });
 

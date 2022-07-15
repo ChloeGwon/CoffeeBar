@@ -730,6 +730,7 @@ background-color: rgb(190, 192, 192);;
     padding: 5px 10px;
     font-size: 20px;
     color: white;
+    cursor: pointer;
 }
 
 .order{
@@ -763,4 +764,30 @@ background-color: rgb(190, 192, 192);;
     padding: 7px 14px;
     border-radius: 50px;
     margin-bottom: 2px;
+}
+
+.example{
+    font-size: 1.3em;
+    text-align: center;
+    ;
+
+}
+
+.pay{
+    color: black;
+    background-color: none;
+    background-color: rgb(15, 223, 15);
+    padding: 10px;
+    border: 2px solid black;
+    font-weight: 500;
+    border-radius: 2px;
+    opacity: 0.9;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.pay:hover{
+    border-radius: 15px;
+    opacity: 1;
 }
