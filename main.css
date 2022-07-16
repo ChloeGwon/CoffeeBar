@@ -15,6 +15,7 @@ body{
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
     color: #fefefe;
+    position: relative;
     
 }
 
@@ -515,7 +516,7 @@ li{
     font-weight: 600;
 }
 
-.content-para3 l li{
+.content-para3  li{
     display: flex;
     flex-direction: row;
     content: "\2680";
@@ -696,6 +697,8 @@ background-color: rgb(190, 192, 192);;
 /* order */
 .check-out-section{
     color: black;
+        position: relative;
+    
 
 }
 .sections{
@@ -774,12 +777,14 @@ background-color: rgb(190, 192, 192);;
 }
 
 .pay{
+   
     color: black;
     background-color: none;
     background-color: rgb(15, 223, 15);
     padding: 10px;
     border: 2px solid black;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 0.8em;
     border-radius: 2px;
     opacity: 0.9;
     margin-left: 20px;
@@ -791,3 +796,69 @@ background-color: rgb(190, 192, 192);;
     border-radius: 15px;
     opacity: 1;
 }
+
+
+/* payment */
+.payment{
+    position: absolute;
+    /* top: 0%;
+    right: 0; */
+    left: 32%;
+    bottom: 1.5%;
+    background-color: white;
+    height: 480px;
+    width: 550px;
+    
+    padding: 20px ;
+    color: black;
+    display: none;
+    flex-direction: column;
+    box-shadow: 1px 5px 13px -3px rgba(0,0,0,0.99);
+    border: none;
+    cursor: pointer;
+
+}
+.payTitle, .cardDetails{
+    color: rgb(4, 138, 4);
+    text-align: center;
+}
+label{
+    font-size: 15px;
+    padding-bottom: 4px;
+    padding-top: 8px;
+
+}
+.payInput{
+    border: none;
+    border-bottom: 2px solid grey;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+.cardInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8px;
+}
+.close-pay{
+    position: absolute;
+    top: 3%;
+    right: 4.5%;
+    background-color: grey;
+    padding: 2.5px 5px;
+    color: white;
+    
+}
+.close-pay:hover{
+    background-color: red;
+}
+.pay-button2{
+    background-color: none;
+    background-color: rgb(15, 223, 15); 
+    padding: 10px 50px;
+    margin-top: 60px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+

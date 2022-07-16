@@ -16,6 +16,7 @@ const example = document.querySelector(".example");
 
 
 
+
 console.log(noOfOrders);
 
 let coffeeChoosen=[];
@@ -154,10 +155,13 @@ let totPrice=0;
 
 orders.addEventListener("click", ()=>{
 
-  
+    
     
 
     coffeeChoosen.forEach((item, index)=>{
+
+       
+        
         totPrice = coffeeChoosen[index].price;
  
         var div = document.createElement("div");
@@ -222,7 +226,7 @@ orders.addEventListener("click", ()=>{
         h2.style.fontWeight="300";
         h2.style.fontSize="1.5em";
     
-    
+        
         div3.append(h1);
         div3.append(h2);
         div3.append(sizes)
@@ -257,6 +261,8 @@ orders.addEventListener("click", ()=>{
             displayPrice(totPrice);           
         });
 
+        
+   
         displayPrice(totPrice);           
         
 
@@ -267,13 +273,13 @@ orders.addEventListener("click", ()=>{
 function displayPrice(totPrice){
     example.innerHTML="Total: $ "+totPrice;
     
-    var pay = document.createElement("botton");
-    pay.className='pay';
-    pay.textContent="CHECKOUT";
-    
-    example.appendChild(pay);
 }
-        
+
+
+
+
+ 
+
 
 
 
@@ -307,5 +313,9 @@ close.addEventListener("click", () => {
 
 })
 });
+
+
+
+
 
 
