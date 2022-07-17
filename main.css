@@ -295,7 +295,11 @@ li{
     margin-top: -65%;
     margin-left: 10%;
 }
-
+.order{
+  font-family: 'Nunito Sans', sans-serif; 
+  font-size: 4rem; 
+  letter-spacing: 0.8cm;
+}
 .addItem{
     margin-left: 40px;
     background-color: #000;
@@ -421,7 +425,10 @@ li{
     display: flex;
     flex-direction: column;
     padding-top: 6rem;
+    font-family: 'Nunito Sans', sans-serif;
+     letter-spacing: 0.4cm
 }
+
 .coffeeHead{
     font-size: 24px; 
 }
@@ -862,3 +869,120 @@ label{
     text-transform: uppercase;
 }
 
+
+@media screen and (max-width:780px) {
+    
+    header{
+       
+    }
+    .coffeeLogo{
+        width: auto;
+        padding: 10px;
+    }
+    nav ul{
+        display: none;
+    }
+    .mainImg{
+        width: 100%;
+        height: 300px;
+       overflow: auto;
+       opacity: 0.9;
+    }
+    .top{
+        margin: 15px;
+    }
+    .intro{
+        padding: 0%;
+    }
+    .desc-heading{
+        word-spacing: 0;
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+    .for-border{
+        font-size: 13px;
+        word-spacing: 0%;
+        line-height: 15px;  
+    }
+   
+    .for-border2{
+        font-size: 13px;
+        word-spacing: 0%;
+        line-height: 0px;  
+    }
+    
+    .bottom{
+        flex-direction: column;
+    }
+    .h3{
+        text-align: center;
+    }
+    .left p{
+        letter-spacing: 0;
+        line-height: 28px;
+        font-size: 1.7em;
+    }
+
+    .left{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .right .right-img{
+        height: 240px;
+        width: 94%;
+        margin: 10px;
+    }
+    .order{
+        letter-spacing: 0;
+        padding: 0;
+        font-size: 50px;
+        padding-top: 10px;
+    }
+    .AboveProduct-content{
+        font-size: 20px;
+    }
+    .storeName{
+       top: 0;
+       left: 0%;
+       letter-spacing: 0ch;
+       font-weight: 800;
+       font-size: 5rem;
+       color: #fcfcfa;
+       margin: 0%;
+       padding: 0%;
+    }
+    .storeAddress{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #ebe9e8;
+    }
+    .menu{
+        padding: 0;
+        letter-spacing: 0;
+    }
+    .menu-bottom ul li {
+        font-size: 20px;
+        letter-spacing: 0;
+        
+    }
+    /* .orders{
+        display: none;
+    } */
+    .content-para2, .content-para3{
+        display: none;
+    }
+    .content-para1{
+        margin: 0;
+        font-size: 40px;
+        display: inline;
+    }
+    .AboveProduct-content {
+       width: 50px;
+        display: inline;
+        top: 20%; 
+         left: 4.5%;
+        color: rgb(255, 253, 250) ;
+
+    }
+}
