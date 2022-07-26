@@ -519,6 +519,10 @@ li{
     font-family: 'Dosis', sans-serif;
 }
 
+.spChoice{
+    display: ;
+}
+
 .content-para3 span{
     font-weight: 600;
 }
@@ -561,6 +565,20 @@ li{
     z-index: 1;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
+}
+.spChoice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.spChoice h3{
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 .drinkCost{
     position:absolute;
@@ -1007,3 +1025,4 @@ label{
     }
 
 }
+

@@ -134,12 +134,7 @@ newSpan.forEach((item, index)=>{
         noOfOrders.style.display = 'inline';
         noOfOrders.innerHTML=i;
 
-        
-    
-    })
-
-     
-
+    })   
 })
 
 var sizes, sizeS, sizeM, sizeL;
@@ -274,6 +269,19 @@ function displayPrice(totPrice){
     example.innerHTML="Total: $ "+totPrice;
     
 }
+
+
+const spChoice = document.querySelectorAll('.selectOne');
+const sliderWrapper = document.querySelector('.specialWrapper');
+console.log(spChoice);
+
+spChoice.forEach((item, index)=>{
+    item.addEventListener('click', ()=>{
+
+        console.log(sliderWrapper);
+        sliderWrapper.style.transform=`translateX(${-100*index}vw)`;
+    })
+})
 
 
 
